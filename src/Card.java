@@ -8,4 +8,9 @@ public class Card {
         this.suit = suit;
         this.nominal = nominal;
     }
+    @Override
+    public String toString() {
+        return this.card + " " + this.suit;
+
+    }
 }
