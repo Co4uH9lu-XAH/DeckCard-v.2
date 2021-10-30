@@ -8,12 +8,8 @@ public class GiveMeCard {
         PrisonerSays.letsPlay();
         FromCons.fromConsInt();
 
-        //DealOfCards.myDeck(FromCons.fromConsInt());
-
-//ArrayList<Card> deck = SaveDeckOfCards.saveDeck();
         ArrayList<Card> newDeck = new ArrayList<>();
         newDeck = DealOfCards.myDeck(FromCons.saidInt);
-//newDeck.add(RandomCard.getCard(deck));
         System.out.println(newDeck.toString());
 
     }
