@@ -19,29 +19,37 @@ public class FromCons {
         }
     }
 
-    public static void  fromConsInt() {
+    public static void fromConsInt() {
         Scanner scan = new Scanner(System.in);
-        saidInt = scan.nextInt();
-        if (saidInt == 0) {
-            PrisonerSays.zero();
-            System.exit(0);
-
-        }else if (saidInt < 0) {
-            PrisonerSays.negativeNumber();
-            saidInt = scan.nextInt();
-                if (saidInt < 0) {
-                    PrisonerSays.twiceNegativeNumber();
-                    System.exit(0);
-                }
-        } else if (saidInt>36){
-            PrisonerSays.moreThenDeck();
-            saidInt = scan.nextInt();
-            if (saidInt>36) {
-                PrisonerSays.twiceNegativeNumber();
+        //saidInt = scan.nextInt();
+        if (!scan.hasNextInt()) {
+            PrisonerSays.notNumber();
+            scan = new Scanner(System.in);
+            if (!scan.hasNextInt()) {
+                PrisonerSays.twiceNotNumber();
                 System.exit(0);
+                }
+            } else {
+                saidInt = scan.nextInt();
+                if (saidInt == 0) {
+                    PrisonerSays.zero();
+                    System.exit(0);
+                } else if (saidInt < 0) {
+                    PrisonerSays.negativeNumber();
+                    saidInt = scan.nextInt();
+                    if (saidInt < 0) {
+                        PrisonerSays.twiceNegativeNumber();
+                        System.exit(0);
+                    }
+                } else if (saidInt > 36) {
+                    PrisonerSays.moreThenDeck();
+                    saidInt = scan.nextInt();
+                    if (saidInt > 36) {
+                        PrisonerSays.twiceNegativeNumber();
+                        System.exit(0);
+                    }
+                }
             }
         }
     }
-}
-
 
