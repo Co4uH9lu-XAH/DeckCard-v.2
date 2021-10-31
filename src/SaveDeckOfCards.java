@@ -4,7 +4,7 @@ public class SaveDeckOfCards {
 
     public static ArrayList<Card> saveDeck () {
 
-        Card heartsSix = new Card("Шестерка", "червей", 6);
+        Card heartsSix = new Card("Шестерка", "червей",6);
         Card heartsSeven = new Card("Семерка", "червей", 7);
         Card heartsEight = new Card("Восьмерка", "червей", 8);
         Card heartsNine = new Card("Девятка", "червей", 9);

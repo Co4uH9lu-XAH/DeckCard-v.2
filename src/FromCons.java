@@ -5,7 +5,7 @@ public class FromCons {
     static int saidInt;
 
 
-    public static String fromConsString() {
+    public static void fromConsString() {
         Scanner scan = new Scanner(System.in);
         saidString = scan.nextLine();
         while (saidString.equals("")) {
@@ -17,10 +17,9 @@ public class FromCons {
             System.exit(0);
 
         }
-        return saidString;
     }
 
-    public static int fromConsInt() {
+    public static void  fromConsInt() {
         Scanner scan = new Scanner(System.in);
         saidInt = scan.nextInt();
         if (saidInt == 0) {
@@ -42,7 +41,6 @@ public class FromCons {
                 System.exit(0);
             }
         }
-        return saidInt;
     }
 }
 

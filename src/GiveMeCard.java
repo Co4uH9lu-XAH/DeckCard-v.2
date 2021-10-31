@@ -14,6 +14,5 @@ public class GiveMeCard {
             System.out.println(cardFoPrint.toString());
             Thread.sleep(1000);
         }
-
     }
 }

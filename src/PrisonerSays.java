@@ -1,11 +1,24 @@
 public class PrisonerSays {
 
-    public static void introductorySpeech(){
-        System.out.println("Здорово! Как звать?");
+    public static void introductorySpeech() throws InterruptedException {
+        String speech = "Здорово! Как звать?";
+        char [] charArray = speech.toCharArray();
+        for (char chArray: charArray){
+            Thread.sleep(100);
+            System.out.print(chArray);
+        }
+        System.out.println("");
     }
-    public static void letsPlay (){
-        System.out.println("Давай играть, " + FromCons.saidString+". Сколько карт тянешь?");
+    public static void letsPlay () throws InterruptedException {
+        String play = "Давай играть, " + FromCons.saidString+". Сколько карт тянешь?";
+        char [] charArray = play.toCharArray();
+        for (char chArray: charArray){
+            Thread.sleep(100);
+            System.out.print(chArray);
+        }
+        System.out.println("");
     }
+
     public static void noEnter (){
         System.out.println("A? Не слышу...");
     }
