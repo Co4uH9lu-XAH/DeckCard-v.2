@@ -4,7 +4,7 @@ public class PrisonerSays {
         String speech = "Здорово! Как звать?";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
@@ -14,7 +14,7 @@ public class PrisonerSays {
         String play = "Давай играть, " + FromCons.saidString + ". Сколько карт тянешь?";
         char[] charArray = play.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
@@ -23,7 +23,7 @@ public class PrisonerSays {
         String speech = "Давай все же назовешься подлинее.";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
@@ -32,7 +32,7 @@ public class PrisonerSays {
         String speech = "Пробел, так пробел.";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.exit(0);
