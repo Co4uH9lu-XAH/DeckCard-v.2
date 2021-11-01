@@ -19,6 +19,24 @@ public class PrisonerSays {
         }
         System.out.println("");
     }
+    public static void space () throws InterruptedException {
+        String speech = "Давай все же назовешься подлинее.";
+        char[] charArray = speech.toCharArray();
+        for (char chArray : charArray) {
+            Thread.sleep(1);
+            System.out.print(chArray);
+        }
+        System.out.println("");
+    }
+    public static void twiceSpace () throws InterruptedException {
+        String speech = "Пробел, так пробел.";
+        char[] charArray = speech.toCharArray();
+        for (char chArray : charArray) {
+            Thread.sleep(1);
+            System.out.print(chArray);
+        }
+        System.exit(0);
+    }
 
     public static void noEnter() {
         System.out.println("A? Не слышу...");
