@@ -11,7 +11,7 @@ public class PrisonerSays {
     }
 
     public static void letsPlay() throws InterruptedException {
-        String play = "Давай играть, " + FromCons.saidString + ". Сколько карт тянешь?";
+        String play = "Сколько карт тянешь, " + FromCons.saidString;
         char[] charArray = play.toCharArray();
         for (char chArray : charArray) {
             Thread.sleep(100);
@@ -20,7 +20,7 @@ public class PrisonerSays {
         System.out.println("");
     }
     public static void space () throws InterruptedException {
-        String speech = "Давай все же назовешься подлинее.";
+        String speech = "Давай, все же, назовешься подлинее.";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
             Thread.sleep(100);

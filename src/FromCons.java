@@ -16,10 +16,10 @@ public class FromCons {
             PrisonerSays.hitler();
             System.exit(0);
 
-        } else if (saidString.equals(" ")){
+        } else if (saidString.trim().equals("")) {
             PrisonerSays.space();
             saidString = scan.nextLine();
-            if (saidString.equals(" ")){
+            if (saidString.trim().equals("")) {
                 PrisonerSays.twiceSpace();
             }
         }
@@ -34,15 +34,6 @@ public class FromCons {
             if (!scan.hasNextInt()) {
                 PrisonerSays.twiceNotNumber();
                 System.exit(0);
-            }
-        } else if (scan.equals("")) {
-                PrisonerSays.notNumber();
-                scan = new Scanner(System.in);
-                if (scan.equals("")) {
-                    PrisonerSays.twiceNotNumber();
-                    System.exit(0);
-                } // На жмяканье Enter почему-то, не работает. Enter вообще не участвует в этой части программы.
-                  // просто курсор вниз спускает. Наверное, не баг, а фича.
             } else {
                 saidInt = scan.nextInt();
                 if (saidInt == 0) {
@@ -66,4 +57,4 @@ public class FromCons {
             }
         }
     }
-
+}
