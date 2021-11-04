@@ -34,26 +34,25 @@ public class FromCons {
             if (!scan.hasNextInt()) {
                 PrisonerSays.twiceNotNumber();
                 System.exit(0);
-            } else {
-                saidInt = scan.nextInt();
-                if (saidInt == 0) {
-                    PrisonerSays.zero();
-                    System.exit(0);
-                } else if (saidInt < 0) {
-                    PrisonerSays.negativeNumber();
-                    saidInt = scan.nextInt();
-                    if (saidInt < 0) {
+            }
+        } else{
+            saidInt= scan.nextInt();
+            if (saidInt==0){
+                PrisonerSays.zero();
+            } else if (saidInt<0){
+                PrisonerSays.negativeNumber();
+                saidInt= scan.nextInt();
+                    if(saidInt<0){
                         PrisonerSays.twiceNegativeNumber();
                         System.exit(0);
                     }
-                } else if (saidInt > 36) {
-                    PrisonerSays.moreThenDeck();
-                    saidInt = scan.nextInt();
-                    if (saidInt > 36) {
-                        PrisonerSays.twiceNegativeNumber();
+            } else if (saidInt>36){
+                PrisonerSays.moreThenDeck();
+                saidInt= scan.nextInt();
+                    if (saidInt>36){
+                        PrisonerSays.zero();
                         System.exit(0);
                     }
-                }
             }
         }
     }
