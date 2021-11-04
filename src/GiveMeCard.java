@@ -8,8 +8,7 @@ public class GiveMeCard {
         PrisonerSays.letsPlay();
         FromCons.fromConsInt();
 
-        ArrayList<Card> newDeck = new ArrayList<>();
-        newDeck = DealOfCards.myDeck(FromCons.saidInt);
+        ArrayList<Card> newDeck = DealOfCards.myDeck(FromCons.saidInt);
         for (Card cardFoPrint: newDeck){
             System.out.println(cardFoPrint.toString());
             Thread.sleep(1000);

@@ -4,17 +4,17 @@ public class PrisonerSays {
         String speech = "Здорово! Как звать?";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
     }
 
     public static void letsPlay() throws InterruptedException {
-        String play = "Сколько карт тянешь, " + FromCons.saidString;
+        String play = "Сколько карт тянешь, " + FromCons.saidString+"?";
         char[] charArray = play.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
@@ -23,7 +23,7 @@ public class PrisonerSays {
         String speech = "Давай, все же, назовешься подлинее.";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.out.println("");
@@ -32,7 +32,7 @@ public class PrisonerSays {
         String speech = "Пробел, так пробел.";
         char[] charArray = speech.toCharArray();
         for (char chArray : charArray) {
-            Thread.sleep(1);
+            Thread.sleep(100);
             System.out.print(chArray);
         }
         System.exit(0);
